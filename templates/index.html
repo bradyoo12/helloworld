@@ -1,0 +1,50 @@
+<!doctype html>
+<head>
+    <title>Hello there - Mozaik you</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+    <main>
+      <div class="px-4 py-3 my-2 text-center">
+          <!-- <img class="d-block mx-auto mb-4" src="{{ url_for('static', filename='images/azure-icon.svg') }}" alt="Azure Logo" width="192" height="192"/>
+          <img  src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
+          <h1 class="display-6 fw-bold text-primary">Welcome to Blur You</h1>            
+        </div>
+      <form method="post" action="{{url_for('process')}}">
+          <div class="col-md-6 mx-auto text-center">
+              <label for="url" class="form-label fw-bold fs-5">Could you please paste url of your video?</label>
+
+              <!-- <p class="lead mb-2">Could you please tell me your name?</p> -->
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center my-1">
+                  <input type="text" class="form-control" id="url" name="url" placeholder="https://mozaikyouvm.blob.core.windows.net/video/v1.mp4" style="max-width: 500px;">
+                </div>            
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center my-2">
+                <button type="submit" class="btn btn-primary btn-lg px-4 gap-3">Blur faces in video</button>
+              </div>
+          </div>
+      </form>
+      <div style="text-align: center; vertical-align: top;">
+        <p>Your support with request will help improve our service.</p>
+        <p>
+          <img src="{{ url_for('static', filename='images/qr_cN2dT097Ec93cNO288.png') }}" width="288" style="vertical-align: top;">
+        </p>
+        <script async
+          src="https://js.stripe.com/v3/buy-button.js">
+        </script>
+
+        <stripe-buy-button
+          buy-button-id="buy_btn_1OiFcnLrYZVuTnsOy1NabWU5"
+          publishable-key="pk_live_51ObkE0LrYZVuTnsOcwWUfGcy6pMDdLqTg9EdSNsEdOYOMYv7gXQEzP3OcBqCEWna3uAdyHvY6drXa0K8b6z7mwv300lyLGcGOZ"
+        >
+        </stripe-buy-button>        
+      </div>
+      <div style="text-align: center;">
+        <h3>Further improvements and developments in progress</h3>
+        <a href="https://github.com/users/bradyoo12/projects/2/views/1" target="_blank">
+          https://github.com/users/bradyoo12/projects/2/views/1
+        </a>
+      </div>      
+    </main>      
+</body>
+</html>
