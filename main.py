@@ -5,7 +5,7 @@ from flask_wtf import FlaskForm
 from wtforms import FileField, SubmitField
 from werkzeug.utils import secure_filename
 
-import cv2
+# import cv2
 # from azure.storage.blob import BlobServiceClient
 # import numpy as np
 import os
