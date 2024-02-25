@@ -8,15 +8,15 @@ from werkzeug.utils import secure_filename
 # import cv2
 # from azure.storage.blob import BlobServiceClient
 # import numpy as np
-# import os
+import os
 # import datetime
 # # import mediapipe as mp
 # from ultralytics import YOLO # pip install ultralytics
 # from moviepy.editor import (AudioFileClip, VideoFileClip)
 # # import ffmpeg
 # from pathlib import Path
-# from flask import (Flask, redirect, render_template, request,
-#                    send_from_directory, url_for)
+from flask import (Flask, redirect, render_template, request,
+                   send_from_directory, url_for)
 
 app = Flask(__name__)
 
