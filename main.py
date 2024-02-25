@@ -1,9 +1,9 @@
 # https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-service
 # https://github.com/bradyoo12/helloworld.git
 
-from flask_wtf import FlaskForm
-from wtforms import FileField, SubmitField
-from werkzeug.utils import secure_filename
+# from flask_wtf import FlaskForm
+# from wtforms import FileField, SubmitField
+# from werkzeug.utils import secure_filename
 
 # import cv2
 # from azure.storage.blob import BlobServiceClient
